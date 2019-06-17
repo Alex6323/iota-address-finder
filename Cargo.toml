@@ -1,0 +1,14 @@
+[package]
+name = "iota-address-finder"
+version = "0.1.0"
+authors = ["Thoralf-M"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures-preview = "0.2.2"
+iota-lib-rs = "0.1.3"
+structopt = "0.2.16"
+num_cpus = "1.10.1"
+scoped-pool = "1.0.0"
