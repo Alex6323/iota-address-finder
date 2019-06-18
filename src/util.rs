@@ -35,12 +35,3 @@ fn int2trits(v: i64, out: &mut [i8]) {
     value = (value + 1) / (3 as i64);
   }
 }
-
-#[cfg(test)]
-mod util_tests {
-    use super::*;
-
-    fn test_int2trits() {
-        //assert_eq!()
-    }
-}

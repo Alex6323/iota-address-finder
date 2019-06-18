@@ -39,7 +39,7 @@ struct Args {
 }
 
 fn read_seed() -> Result<String, Error> {
-    println!("Please enter a seed or just press enter to get a random seed");
+    println!("Please enter a seed");
 
     let mut input = String::new();
     let seed: String = loop {
@@ -158,7 +158,6 @@ fn main() -> Result<(), Error> {
     let num_threads = get_num_threads(&args);
     println!("num_threads = {}", num_threads);
 
-    //process(&seed, &words, num_threads, &args);
     if args.return_seed {
         process_generate_addresses_seed(&seed, &words, num_threads, &args);
     } else {
